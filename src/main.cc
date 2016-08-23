@@ -558,7 +558,7 @@ void init_app(VulkanContext &ctx) {
 
   mat4x4_perspective(
     ctx.scene.projection,
-    (float)degreesToRadians(60.0f),
+    static_cast<float>(degreesToRadians(60.0f)),
     ctx.app.width / static_cast<float>(ctx.app.height),
     0.1f,
     500.0f
